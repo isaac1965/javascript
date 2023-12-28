@@ -1,4 +1,13 @@
 //sqrt() devuelve la raiz cuadrada de un numero, y cbrt() devuelve la raiz cubica de un numero
+//cbrt() devuelve la raiz cubica;
+// max()
+// min()
+// random()
+// round()
+// floor()
+// trunc()
+// PI (PI tambien se usa sin parentesisi)
+// SQRT_1_2 (Se usa sin parentesis porque solo se utiliza para obtener un valor)
 let resultadoSq = Math.sqrt(25);
 document.write(`SQRT: ${resultadoSq}` + "<br>");
 document.write("<br>");
@@ -11,8 +20,17 @@ document.write(`Devuelve el numero maximo: ${numero}`);
 numero1 = Math.min(1,3,5,6,7);
 document.write("<br>");
 document.write(`Devuelve el numero minimo: ${numero1}` + "<br>");
-//random() devuelve un numero aleatorio entre 0 y 1 ;
-let resultado = Math.random() * 10; 
+//random() devuelve un numero aleatorio entre 0 y 1 con decimales;
+//let resultado = Math.random() * 10; 
+let randomNumber = (numB) => {
+    
+    return Math.trunc(Math.random() * numB);
+}
+
+let resultadoRandomNumber = randomNumber(20);
+document.write(resultadoRandomNumber);
+
+
 //round(); redondea el numero al mas cecano 4.7 sera igual a 5 y 4.4 = 4
 let numero2 = Math.round(resultado);
 document.write(numero2 + "<br>");
@@ -29,7 +47,7 @@ document.write(pi + "<br>");
 //SQRT1_2 raiz cuadrada de un medio
 let sq = Math.SQRT1_2
 document.write(`raiz cuadra de <b style="font-size:20px;">1/2</b>: ${sq}` + "<br>");
-//SQRT2 raiz cuadrada de un medio
+//SQRT2 raiz cuadrada de 2
 let sq2 = Math.SQRT2;
 document.write(`raiz cuadrada de <b style="font-size:20px">2</b>: ${sq2}` + "<br>");
 //E constante de euler
@@ -44,11 +62,9 @@ document.write(`Logaritmo nerperiano de <b style="font-size:20px;">10</b>: ${ln1
 //LOG2E logaritmo con base 2 de euler
 let log2e = Math.LOG2E;
 document.write(`Logaritmo con base <b style="font-size:20px;">2</b> de euler: ${log2e}` + "<br>");
-//LOG10E logaritmo con base 2 de euler
+//LOG10E logaritmo con base 10 de euler
 let log10e = Math.LOG10E;
 document.write(`Logaritmo con base <b style="font-size:20px;">10</b> de euler: ${log10e}` + "<br>");
 let potencia = Math.pow(10,2);
 document.write(potencia);
-
-
 

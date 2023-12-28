@@ -10,7 +10,7 @@
 /* Bucle con continue  salta el valor indicado y continua*/
 //for(let i=0; i< 10; i++){
     //document.write(i + "<br>");
-    //if (i == 5 ){
+    //if (i == 6 ){
         //continue;
     //}
 //}
@@ -19,14 +19,14 @@ let nombres = ["Isaac", "Cristal", "Lulys", "Fran"];
 
  //for in muestra el valor de la posicion del arreglo
 
-for ( nombre in  nombres ){
+for ( let nombre in  nombres ){
     document.write(nombre + "<br>");
 }
 
 /*for of muestra la posicion en el arreglo*/
 document.write("<br>");
 
-for (nombre of nombres) {
+for (let nombre of nombres) {
     document.write(nombre + "<br>");
     document.write("<br>");
 }

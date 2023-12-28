@@ -1,14 +1,32 @@
+//startsWith(); 
+//endsWith();
+//indexOf();
+//lastIndexOf();
+//padStart();
+//padEnd()
+//repeat();
+//split();
+//substring();
+//toLowerCase();
+//toUppercase();
+//toString();
+//trim();
+//trimStart()
+//trimEnd();
 let cadena = "hola";
 let cadena2 = "isaac";
 let resultado = cadena.concat(" " + cadena2);
 document.write(resultado + "<br>");
 let cadena3 = "hola isaac tambien";
 let cadena4 = "hola ";
+//startsWith() me indica si una determinada cadena inicia con los caracteres que le pase
 let resultado2 = cadena3.startsWith(cadena4);
 let cadena5 = "hola isaac tambien";
 let cadena6 = "ambien";
+//endsWith() me indica si una determinada cadena inicia con los caracteres que le pase
 let resultado3 = cadena5.endsWith(cadena6);
 let cadena7 = "hola isaac tambien nota";
+//includes() se le pasa una cadena y devuele como resultado si esta cadena se encuenta en el string que se esta buscando
 let resultado4 = cadena7.includes("cristal");
 let cadena8 = "Cristal is very very smart";
 let resultado5 = cadena8.indexOf("smart");

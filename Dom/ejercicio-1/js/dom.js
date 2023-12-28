@@ -11,7 +11,7 @@ for(i=0; i< 20; i++){
     fragmento.appendChild(item);
 }
 const box = document.querySelector(".content-box");
-//obtencion y eliminacion de elementos
+//obtencion y eliminacion de elementos child
 //firstChild obtencion del primer elemento, cuenta espacios en blanco
 //lastChild cuenta espacios en blanco tambien
 //firstElementChild No cuenta espacios en blanco
